@@ -53,6 +53,12 @@ venv/Scripts/activate
 pip install -r requirements.txt
 ```
 
+4. Setup the directories:
+
+```bash
+python src/process.py
+```
+
 ---
 
 # Usage

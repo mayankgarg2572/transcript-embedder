@@ -2,14 +2,7 @@ import os, json, numpy as np
 from sentence_transformers import SentenceTransformer
 from tqdm import tqdm
 from pathlib import Path
-
-
-EMBED_MODEL = "all-MiniLM-L6-v2"
-CHUNK_SECS = 10
-ROOT = Path(__file__).resolve().parent.parent
-TRANS_DIR  = ROOT / "transcripts"
-CHUNKS_DIR = ROOT / "chunks"
-EMB_DIR    = ROOT / "embeddings"
+from src.process import TRANS_DIR, EMB_DIR, CHUNKS_DIR, EMBED_MODEL, CHUNK_SECS
 
 
 st_model = SentenceTransformer(EMBED_MODEL)

@@ -1,12 +1,6 @@
 import faiss, pickle, numpy as np
 from sentence_transformers import SentenceTransformer
-from pathlib import Path
-
-
-ROOT = Path(__file__).resolve().parent.parent
-INDEX_DIR  = ROOT / "index"
-EMBED_MODEL = "all-MiniLM-L6-v2"
-TOP_K = 5
+from src.process import INDEX_DIR,EMBED_MODEL, TOP_K
 
 
 st_model = SentenceTransformer(EMBED_MODEL)
