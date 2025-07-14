@@ -36,15 +36,15 @@ This project takes video files, transcribes them, then splits them into fixed-le
 1. Clone this repository:
 
 ```bash
-   git clone https://github.com/mayankgarg2572/transcript-embedder.git
-   cd transcript-embedder
+git clone https://github.com/mayankgarg2572/transcript-embedder.git
+cd transcript-embedder
 ```
 
 2. Create and activate a virtual environment:
 
 ```bash
-    python3 -m venv .venv
-    source .venv/bin/activate
+python3 -m venv .venv
+source .venv/bin/activate
 ```
 
 3. Install dependencies:
