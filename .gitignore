@@ -1,6 +1,11 @@
 videos/*
+!videos
 venv
 chunks/*
+!chunks
 embeddings/*
+!embeddings
 index/*
+!index
 transcripts/*
+!transcripts
