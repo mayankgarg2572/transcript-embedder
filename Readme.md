@@ -28,7 +28,7 @@ This project takes video files, transcribes them, then splits them into fixed-le
 
 - Python 3.10.0
 - ffmpeg installed on your system (for video processing)
-
+- Commands written below are for Windows, if you are using Linux or MacOS, please change the commands accordingly.
 ---
 
 ## Installation
@@ -43,8 +43,8 @@ cd transcript-embedder
 2. Create and activate a virtual environment:
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
+python -m venv venv
+venv/Scripts/activate
 ```
 
 3. Install dependencies:
