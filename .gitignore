@@ -1,0 +1,6 @@
+videos/*
+venv
+chunks/*
+embeddings/*
+index/*
+transcripts/*
