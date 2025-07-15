@@ -1,15 +1,7 @@
 import json, os
 import whisper
 from pathlib import Path
-
-
-ROOT = Path(__file__).resolve().parent.parent
-VIDEOS_DIR = ROOT / "videos"
-TRANS_DIR  = ROOT / "transcripts"
-EMB_DIR    = ROOT / "embeddings"
-INDEX_DIR  = ROOT / "index"
-CHUNKS_DIR = ROOT / "chunks"
-
+from src.process import VIDEOS_DIR, TRANS_DIR
 
 model = whisper.load_model("base")
 
