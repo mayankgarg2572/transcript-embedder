@@ -86,7 +86,7 @@ python src/build_index.py
 Run the query script to search for relevant video segments:
 
 ```bash
-python src/query.py "your search query here"
+python -m src.query "your_query_here"
 ```
 
 ---

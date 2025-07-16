@@ -4,3 +4,4 @@ chunks/*
 embeddings/*
 index/*
 transcripts/*
+*__pycache__*

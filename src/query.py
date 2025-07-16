@@ -1,7 +1,8 @@
 import faiss, pickle, numpy as np
 from sentence_transformers import SentenceTransformer
 from src.process import INDEX_DIR,EMBED_MODEL, TOP_K
-
+import sys
+import time
 
 st_model = SentenceTransformer(EMBED_MODEL)
 index = faiss.read_index(str(INDEX_DIR / "video.index"))
@@ -26,11 +27,13 @@ def search(q: str, k=TOP_K):
     return results
 
 if __name__ == "__main__":
-    import sys
+    start_time = time.time()
     query = " ".join(sys.argv[1:]) or input("Query: ")
-    top = search(query, k=5)
-    for top in top:
+    results = search(query, k=5)
+    elapsed = time.time() - start_time
+    for top in results:
         if top['score'] < 0.1:
             continue
         print(f"{top['video']} Start:{top['start']:.1f}s - End:{top['end']:.1f}s (score={top['score']:.3f})")
+    print(f"Search time: {elapsed:.4f} seconds")
 
