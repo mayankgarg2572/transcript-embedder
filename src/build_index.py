@@ -1,6 +1,6 @@
 import faiss, os, numpy as np
 import pickle
-from src.process import EMB_DIR, CHUNKS_DIR, INDEX_DIR
+from process import EMB_DIR, CHUNKS_DIR, INDEX_DIR
 
 
 emb_files = sorted(os.listdir(EMB_DIR))

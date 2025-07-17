@@ -1,6 +1,6 @@
 import faiss, pickle, numpy as np
 from sentence_transformers import SentenceTransformer
-from src.process import INDEX_DIR,EMBED_MODEL, TOP_K
+from process import INDEX_DIR,EMBED_MODEL, TOP_K
 import sys
 import time
 

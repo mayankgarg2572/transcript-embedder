@@ -1,7 +1,7 @@
 import json, os
 import whisper
 from pathlib import Path
-from src.process import VIDEOS_DIR, TRANS_DIR
+from process import VIDEOS_DIR, TRANS_DIR
 
 model = whisper.load_model("base")
 

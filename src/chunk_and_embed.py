@@ -2,7 +2,7 @@ import os, json, numpy as np
 from sentence_transformers import SentenceTransformer
 from tqdm import tqdm
 from pathlib import Path
-from src.process import TRANS_DIR, EMB_DIR, CHUNKS_DIR, EMBED_MODEL, CHUNK_SECS
+from process import TRANS_DIR, EMB_DIR, CHUNKS_DIR, EMBED_MODEL, CHUNK_SECS
 
 
 st_model = SentenceTransformer(EMBED_MODEL)
